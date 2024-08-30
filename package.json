@@ -2,12 +2,14 @@
   "name": "library-management-system",
   "version": "1.0.0",
   "description": "Library Management System Using Test Driven Development(TDD)  in  Typescript(ts)",
-  "main": "index.js",
+  "main": "LMS.ts",
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+     
+  ],
+  "author": "vishvas patel",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.12",
