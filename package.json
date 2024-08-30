@@ -7,7 +7,9 @@
     "test": "jest"
   },
   "keywords": [
-     
+     "TDD",
+     "LMS",
+     "Jest"
   ],
   "author": "vishvas patel",
   "license": "ISC",
