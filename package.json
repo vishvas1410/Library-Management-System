@@ -19,5 +19,11 @@
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@types/mongodb": "^4.0.6",
+    "@types/mongoose": "^5.11.96",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.0"
   }
 }
