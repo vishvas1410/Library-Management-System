@@ -1,16 +1,19 @@
-import { model, Schema,Document} from "mongoose";
+import mongoose ,{Schema,Document} from "mongoose";
 
-//interface for book
-interface IBook extends Document {
-  isbn: string;
-  title: string;
-  author: string;
-  pYear: number;
-  isBorrowed: boolean;
-}
+export interface IBookInput {
+    isbn: string;
+    title: string;
+    author: string;
+    pYear: number;
+    isBorrowed?: boolean;
+  }
+
+
+  // Define the Mongoose document interface (with Mongoose properties)
+export interface IBook extends Document, IBookInput {}
 
 //Collection Schema design for Books
-const Book_Schema = new Schema<IBook>({
+const BookSchema:Schema = new Schema<IBook>({
   isbn: {
     type: String,
     required: true,
@@ -33,9 +36,11 @@ const Book_Schema = new Schema<IBook>({
     type: Boolean,
     default: false,
   },
+  
 });
 
-const Book = model<IBook>("Book", Book_Schema);
+const Book = mongoose.model<IBook>('Book', BookSchema);
 
 export default Book;
-export { IBook };
+
+
