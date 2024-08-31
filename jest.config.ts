@@ -10,11 +10,11 @@ const config: Config.InitialOptions = {
   roots: ['<rootDir>/src', '<rootDir>/tests'],
 
   // Match test files specifically located in the 'tests' folder
-  testMatch: ['<rootDir>/tests/**/*.(spec|test).ts'],
+  //testMatch: ['<rootDir>/tests/**/*.(spec|test).ts'],
 
   // Enable code coverage
   collectCoverage: true,
-  
+
   maxWorkers:1,
 
   testTimeout:10000,
