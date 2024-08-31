@@ -13,15 +13,13 @@ export const connectToDb = async () => {
 
 //closing the mongodb connection
 export const closeDBConnection = async () => {
-  await mongoose.connection.dropDatabase();
-  await mongoose.connection.close();
+ // await mongoose.connection.dropDatabase();
+ try {
+    
+     await mongoose.connection.close();
+ } catch (error) {
+    console.error('Error closing database connection:', error);
+    
+ }
 };
 
-
-beforeAll(async () => {
-  await connectToDb();
-});
-
-afterAll(async () => {
-  await closeDBConnection();
-});
