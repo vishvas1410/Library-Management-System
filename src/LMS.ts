@@ -1,7 +1,6 @@
-
 import Book, { IBook, IBookInput } from "../model/Book";
 
-//class LMS contains the features like addbook ,borrowbook , list_availbale books and Returning book to library
+//class LMS contains the features like addbook,borrowbook,list_availbale books and Returning book to library
 export default class LMS {
 
         //Method/Function to adding Books to the library Database
