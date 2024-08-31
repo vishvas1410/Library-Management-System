@@ -18,11 +18,11 @@ describe("Borrow Book",()=>{
     
     //this test case fails if the book is already borrowed
     test('should allow borrowing an available book', async () => {
-        const isBorrowed = await lms_service.borrowBook('978-93-5019-561-148');
+        const isBorrowed = await lms_service.borrowBook('978-93-5019-561-467');
         expect(isBorrowed).toBe(true);
 
         const availableBooks = await lms_service.getAvailbaleBooks();
-        expect(availableBooks).not.toContainEqual(expect.objectContaining({ isbn: '978-93-5019-561-148' }));
+        expect(availableBooks).not.toContainEqual(expect.objectContaining({ isbn: '978-93-5019-561-467' }));
     });
 
     //this test case fails if the book is not borrowed not even once
