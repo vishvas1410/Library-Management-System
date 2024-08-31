@@ -62,6 +62,11 @@ export default class LMS {
               console.log(`Book with ISBN ${isbn} has been returned.`);
               return true;
         }
+
+        //Method/Function to Get all the books including borrowed one 
+        async getTotalAvailableIncludingBorrowedOne():Promise<IBook[]>{
+          return await Book.find({});
+        }
 }
 
 
