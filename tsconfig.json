@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "ES6",          // JavaScript version to compile down to
     "module": "commonjs",     // Module system
-    "outDir": "./dist",         // Directory where compiled JavaScript will go
-    "rootDir": "",       // Directory where your TypeScript files are located
-    "strict": true,           // Enable all strict type-checking options
+    "outDir": "dist",         // Directory where compiled JavaScript will go
+    "rootDir": "./",       // Directory where your TypeScript files are located
+    "strict": true,         // Enable all strict type-checking options
     "esModuleInterop": true   // Enable compatibility with CommonJS and ESModules
   },
   "include": ["./src/**/*.ts","./tests/**/*.ts", "config/db.ts"],//includes all typescript file inside the src and tests folder along with it's subdirectory
