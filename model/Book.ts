@@ -1,5 +1,7 @@
 import mongoose ,{Schema,Document} from "mongoose";
 
+
+//this interface provides only below properties 
 export interface IBookInput {
     isbn: string;
     title: string;
@@ -9,7 +11,7 @@ export interface IBookInput {
   }
 
 
-  // Define the Mongoose document interface (with Mongoose properties)
+/*The IBook interface extends both Document and IBookInput to combine the custom book properties with Mongoose's special document properties like _id.*/
 export interface IBook extends Document, IBookInput {}
 
 //Collection Schema design for Books
