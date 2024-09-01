@@ -10,6 +10,7 @@ The Library Management System (LMS) is a TypeScript-based application designed t
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Running Tests](#running-tests)
+- [Author][#author]
 
 ## Features
 
