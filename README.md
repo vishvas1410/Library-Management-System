@@ -40,8 +40,13 @@ The Library Management System (LMS) is a TypeScript-based application designed t
 
    ```bash
    git clone https://github.com/vishvas1410/Library-Management-System.git
+
+2. **Navigate To The Project Directory**
+
+   ```bash
+   cd Library-Management-System
    
-2. **install the Dependancy**
+3. **install the Dependancy**
 
    ```bash
    npm install
@@ -59,3 +64,7 @@ The Library Management System (LMS) is a TypeScript-based application designed t
 
    ```bash
    npm run test:coverage
+
+## Author
+
+   Vishvas Patel - LD College Of Engineering
